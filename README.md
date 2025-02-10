@@ -31,12 +31,12 @@ Bu proje, ASP.NET MVC ve Code First yöntemi kullanılarak geliştirilmiş bir t
 
 ## ☄️ Projeye Genel Bakış
 
-###### Ana Sayfa
+###### 🏠 Ana Sayfa
 
 <img src="https://github.com/user-attachments/assets/f733c723-7ed5-41a1-8962-032cce0b4681" width:700>
 
 
-###### Hakkımızda
+###### 🔎 Hakkımızda
 
 <img src="https://github.com/user-attachments/assets/99688df4-c3a2-4957-b330-5e38ec10a1bf" width:700>
 
