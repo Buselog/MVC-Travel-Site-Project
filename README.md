@@ -43,7 +43,7 @@ Bu proje, ASP.NET MVC ve Code First yöntemi kullanılarak geliştirilmiş bir t
 
 ###### ✈️ Bloglar Sayfası
 
-<img src="https://i.imgur.com/izreJcj.jpeg" width:700>
+<img src="https://i.imgur.com/5x3ZOBt.jpeg" width:700>
 
 
 
@@ -80,10 +80,9 @@ Bu proje, ASP.NET MVC ve Code First yöntemi kullanılarak geliştirilmiş bir t
 
 
 
-
 ###### 🍴 Geleneksel Yemekler Blog Sayfası
 
-<img src="https://i.imgur.com/2j84P97.jpeg" width:700>
+<img src="https://i.imgur.com/4J7xXmI.jpeg" width:700>
 
 
 
