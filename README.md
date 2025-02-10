@@ -43,7 +43,7 @@ Bu proje, ASP.NET MVC ve Code First yöntemi kullanılarak geliştirilmiş bir t
 
 ###### Bloglar
 
-<img src="file:///C:/Users/BUSE/Desktop/login_content4/localhost_44309_Blog_BlogIndex.png" width:700>
+<img src="https://imgur.com/a/OIRfY0I" width:700>
 
 
 ###### Yemek Blog Sayfası
