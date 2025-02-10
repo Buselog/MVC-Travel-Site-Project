@@ -49,6 +49,12 @@ Bu proje, ASP.NET MVC ve Code First yöntemi kullanılarak geliştirilmiş bir t
 
 ###### Otel Blog Sayfası
 
+<img src="https://github.com/user-attachments/assets/e41f68c0-3031-4917-9aac-dced04340011" width:700>
+
+<img src="https://github.com/user-attachments/assets/1bb724af-2deb-42a9-963c-715b6e03df20" width:700>
+
+<img src="" width:700>
+<img src="" width:700>
 <img src="" width:700>
 
 
