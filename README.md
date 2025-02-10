@@ -41,15 +41,22 @@ Bu proje, ASP.NET MVC ve Code First yöntemi kullanılarak geliştirilmiş bir t
 <img src="https://github.com/user-attachments/assets/99688df4-c3a2-4957-b330-5e38ec10a1bf" width:700>
 
 
-###### Bloglar
+###### Bloglar Sayfası
 
 <img src="https://i.imgur.com/izreJcj.jpeg" width:700>
 
 
 
-###### Yemek Blog Sayfası
+###### Otel Blog Sayfası
 
 <img src="" width:700>
+
+
+
+###### Geleneksel Yemekler Blog Sayfası
+
+<img src="https://i.imgur.com/2j84P97.jpeg" width:700>
+
 
 
 ###### İletişim
@@ -58,73 +65,53 @@ Bu proje, ASP.NET MVC ve Code First yöntemi kullanılarak geliştirilmiş bir t
 
 
 
-
-
-###### Hakkımızda
-
-<img src="" width:700>
-
-
-###### Hakkımızda
-
-<img src="" width:700>
+-----
 
 
 
-###### Hakkımızda
-
-<img src="" width:700>
+### Admin Paneli
 
 
+###### Admin Giriş Paneli
 
-###### Hakkımızda
-
-<img src="" width:700>
+<img src="https://github.com/user-attachments/assets/cad164d9-ade0-41fa-b1ea-5c00b46f740a" width:700>
 
 
 
-###### Hakkımızda
+###### Admin - Hakkımızda Tablosu
 
-<img src="" width:700>
-
-
-
-###### Hakkımızda
-
-<img src="" width:700>
+<img src="https://github.com/user-attachments/assets/6f979fcd-4e31-4bb8-9bd7-121826a30658" width:700>
 
 
+###### Admin - Blog Tablosu
 
-###### Hakkımızda
-
-<img src="" width:700>
+<img src="https://github.com/user-attachments/assets/38ed6a25-a967-4e4e-9fea-9380782d48d4" width:700>
 
 
 
-###### Hakkımızda
+###### Admin - Otel Blog Tablosu
 
-<img src="" width:700>
-
-
-
-###### Hakkımızda
-
-<img src="" width:700>
+<img src="https://github.com/user-attachments/assets/0f5a1761-55c5-4fca-9052-19d1f08dc67d" width:700>
 
 
 
-###### Hakkımızda
+###### Admin - Geleneksel Yemekler Tablosu
 
-<img src="" width:700>
-
-
+<img src="https://github.com/user-attachments/assets/a195b57c-5f20-4fd4-8090-99cca4f13877" width:700>
 
 
 
- 
+###### Admin - Adres Bilgi Tablosu
+
+<img src="https://github.com/user-attachments/assets/3d570074-1ac3-42cd-8a9b-47a00ecf4611" width:700>
 
 
-    
+
+###### Admin - Contact Tablosu
+
+<img src="https://github.com/user-attachments/assets/4d20d398-5d71-4ecc-9d5d-6de76f8bd94c" width:700>
+
+
     
 
 
