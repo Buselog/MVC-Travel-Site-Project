@@ -53,9 +53,28 @@ Bu proje, ASP.NET MVC ve Code First yöntemi kullanılarak geliştirilmiş bir t
 
 <img src="https://github.com/user-attachments/assets/1bb724af-2deb-42a9-963c-715b6e03df20" width:700>
 
-<img src="" width:700>
-<img src="" width:700>
-<img src="" width:700>
+<img src="https://github.com/user-attachments/assets/5ffd7bb5-7384-47d3-9af7-9e7e6e4aa44c" width:700>
+<img src="https://github.com/user-attachments/assets/cffd6ebe-9312-4a87-b893-de82adeb3c45" width:700>
+
+<img src="https://github.com/user-attachments/assets/ffd5896a-31e0-4b33-bfb7-11b8eab40d97" width:700>
+<img src="https://github.com/user-attachments/assets/f9a919ff-bba4-4d7b-bc99-59f777ee5263" width:700>
+
+
+<img src="https://github.com/user-attachments/assets/0e170cee-2403-4768-af28-2ca0d2bb0e46" width:700>
+<img src="https://github.com/user-attachments/assets/04f6ed77-eee0-4bba-a815-9e66a56193c7" width:700>
+
+<img src="https://github.com/user-attachments/assets/cd22929d-9636-479f-bcb8-ec5c4b17ac58" width:700>
+<img src="https://github.com/user-attachments/assets/dba161fb-049c-4f78-8080-4de5c6d9caf8" width:700>
+
+<img src="https://github.com/user-attachments/assets/b513ee43-61bb-454a-be43-9feb003cb951" width:700>
+<img src="https://github.com/user-attachments/assets/c3106736-a210-4276-9ad8-1368b8242e7c" width:700>
+
+<img src="https://github.com/user-attachments/assets/c6cba8cc-4a68-4b81-ab74-f1d7665dce94" width:700>
+<img src="https://github.com/user-attachments/assets/dc6b7469-92d6-4df7-b613-476a99a6a628" width:700>
+
+<img src="https://github.com/user-attachments/assets/66f87768-31cc-47bb-aa85-6e4d7bd0b6e0" width:700>
+<img src="https://github.com/user-attachments/assets/0b5d7e62-1fc5-424c-b5f2-33db5786e16a" width:700>
+
 
 
 
