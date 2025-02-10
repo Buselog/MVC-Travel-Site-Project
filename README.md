@@ -33,30 +33,30 @@ Bu proje, ASP.NET MVC ve Code First yöntemi kullanılarak geliştirilmiş bir t
 
 ###### Ana Sayfa
 
-<img src="https://github.com/user-attachments/assets/8c9b4d7c-950e-4256-a8bc-0601aa9208d6" width:800>
-<img src="https://github.com/user-attachments/assets/289612ff-9be7-40a5-9fc5-7ab28f0b7e2e" width:800>
-<img src="https://github.com/user-attachments/assets/e449a4fd-6233-401e-8738-b90c2f3d15f9" width:800>
+<img src="https://github.com/user-attachments/assets/f733c723-7ed5-41a1-8962-032cce0b4681" width:700>
 
 
 ###### Hakkımızda
 
-<img src="https://github.com/user-attachments/assets/5c36fa9c-75ab-4d80-8bd1-1d72b0baff3c" width:800>
+<img src="https://github.com/user-attachments/assets/99688df4-c3a2-4957-b330-5e38ec10a1bf" width:700>
 
 
-
-###### Hakkımızda
+###### Bloglar
 
 <img src="" width:700>
 
 
-###### Hakkımızda
+###### Yemek Blog Sayfası
 
 <img src="" width:700>
 
 
-###### Hakkımızda
+###### İletişim
 
-<img src="" width:700>
+<img src="https://github.com/user-attachments/assets/c8fadd39-f300-4d47-84c5-1c237426db8e" width:700>
+
+
+
 
 
 ###### Hakkımızda
