@@ -34,6 +34,89 @@ Bu proje, ASP.NET MVC ve Code First yöntemi kullanılarak geliştirilmiş bir t
 ###### Ana Sayfa
 
 <img src="https://github.com/user-attachments/assets/284e09f3-74e6-4613-9280-a328fe36d9a6" width:700>
+
+
+###### Hakkımızda
+
+<img src="https://github.com/user-attachments/assets/c055b195-f1a9-48b7-be20-9b67e0a9f8b1" width:700>
+
+
+###### Hakkımızda
+
+<img src="" width:700>
+
+
+###### Hakkımızda
+
+<img src="" width:700>
+
+
+###### Hakkımızda
+
+<img src="" width:700>
+
+
+###### Hakkımızda
+
+<img src="" width:700>
+
+
+###### Hakkımızda
+
+<img src="" width:700>
+
+
+
+###### Hakkımızda
+
+<img src="" width:700>
+
+
+
+###### Hakkımızda
+
+<img src="" width:700>
+
+
+
+###### Hakkımızda
+
+<img src="" width:700>
+
+
+
+###### Hakkımızda
+
+<img src="" width:700>
+
+
+
+###### Hakkımızda
+
+<img src="" width:700>
+
+
+
+###### Hakkımızda
+
+<img src="" width:700>
+
+
+
+###### Hakkımızda
+
+<img src="" width:700>
+
+
+
+###### Hakkımızda
+
+<img src="" width:700>
+
+
+
+
+
  
 
 
