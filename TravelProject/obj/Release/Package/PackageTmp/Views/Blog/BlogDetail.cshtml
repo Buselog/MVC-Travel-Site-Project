@@ -1,0 +1,109 @@
+﻿@model TravelProject.Models.Classes.BlogComments
+@{
+    ViewBag.Title = "BlogDetail";
+    Layout = "~/Views/Layout/Index.cshtml";
+}
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Blog Detay</title>
+    <link href="~/Template/content2/css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <link href="~/Template/content2/css/style.css" rel='stylesheet' type='text/css' />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Personal Blog Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
+	Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!----webfonts---->
+    <link href='http://fonts.googleapis.com/css?family=Oswald:100,400,300,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,300italic' rel='stylesheet' type='text/css'>
+    <!----//webfonts---->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!--end slider -->
+    <!--script-->
+    <script type="text/javascript" src="~/Template/content2/js/move-top.js"></script>
+    <script type="text/javascript" src="~/Template/content2/js/easing.js"></script>
+
+</head>
+
+<body>
+
+    <div class="single">
+        <div class="container">
+            <div class="col-md-8 single-main">
+
+
+                @foreach (var item in Model.Value1)
+                {
+                    <div class="single-grid">
+                        <img src="@item.BlogImageUrl" alt="@item.BlogTitle" />
+                        <p>
+                            @item.BlogDescription
+                        </p>
+                    </div>
+                }
+
+
+                @foreach (var item in Model.Value2)
+                {
+                    <ul class="comment-list">
+
+                        <li>
+                            <img src="~/Template/content2/images/avatar.png" class="img-responsive" alt="">
+                            <div class="desc">
+                                <p>
+                                    <b>@item.CommentName</b> &nbsp; <small><span style="font-style: italic;">@item.CommentMail</span></small>
+                                </p>
+
+                                <p>@item.Comment</p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </li>
+                    </ul>
+
+                }
+
+                @if (!Model.Value2.Any()) // there is no comments for specific blog
+                {
+                    <ul class="comment-list">
+                        <li>
+                            <div class="desc">
+                                <p>
+                                    Be the first to comment on this blog!
+                                </p>
+                            </div>
+                        </li>
+
+                    </ul>
+                }
+
+
+                @Html.Action("CommentPartial","Blog")
+
+            </div>
+
+
+            <div class="col-md-4 side-content">
+                <div class="recent">
+                    <h3>RECENT POSTS</h3>
+                    <ul>
+                        @foreach (var item in Model.Value3)
+                        {
+                            <li><a href="/Blog/BlogDetail/@item.BlogID">@item.BlogTitle</a></li>
+                        }
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,26 @@
+﻿@using TravelProject.Models.Classes
+@model List<Blog>
+
+
+<div class="box1-left">
+
+    @foreach (var item in Model)
+    {
+        <div>
+
+            <a href="/Blog/BlogDetail/@item.BlogID">
+
+                <div class="bot-img">
+                    <img src="@item.BlogImageUrl" alt="" />
+                </div>
+                <div class="bot-desc1">
+                    <p>@item.BlogDescription.Substring(0, 80)...</p>
+                </div>
+                <div class="clear"></div>
+            </a>
+
+        </div>
+    }
+
+</div>
+

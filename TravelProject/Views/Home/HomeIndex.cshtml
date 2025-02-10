@@ -1,0 +1,87 @@
+﻿@using TravelProject.Models.Classes
+@model List<Blog>
+@{
+    ViewBag.Title = "HomeIndex";
+    Layout = "~/Views/Layout/Index.cshtml";
+}
+
+<div class="header-banner">
+    <div class="wrap">
+        <div class="banner">
+            <div class="indent">
+                <br />
+                <br />
+
+                @Html.Partial("~/Views/Home/BannerLeftPartial.cshtml")
+
+                <div class="header_bottom_right_images">
+
+                    <div class="slider">
+                        <ul class="rslides" id="slider1">
+                            @foreach (var item in Model)
+                            {
+                                <li><img src="@item.BlogImageUrl" alt="@item.BlogTitle" style="width:650px; height:365px"></li>
+                            }
+
+                        </ul>
+                    </div>
+                    <br />
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+<div class"content">
+    <div class="wrap">
+        <div class="wrapper">
+            <div class="con-top">
+                <h3 style="font-style: italic; color: #076461">About Our Travel Website</h3>
+                <p>
+                    The world is a treasure trove of wonders waiting to be explored! Our travel website is designed especially for travel enthusiasts, serving as a comprehensive guide to help you plan your dream vacation, discover unique destinations, and create unforgettable memories.
+
+                    Every traveler has a unique story, which is why our content and recommendations focus on personalized experiences. Whether you're seeking a peaceful nature retreat, a culturally rich historical escape, or an adrenaline-filled adventure, our travel website is your perfect companion.
+
+                    We're here to assist you at every step of your journey: from must-visit places and accommodation options to dining guides and travel tips, we aim to ensure you have the best experience possible. If you're ready to embark on a journey full of discoveries, let's start together!
+
+                    <br />
+                    <b style="font-style:oblique">Your dream journey is just a click away!</b>
+                </p>
+            </div>
+
+            @*Html.Partial("~/Views/Home/ConBotPartial.cshtml")*@
+            @Html.Action("ConBotPartial", "Home")
+
+
+            @*ConBotPatial adındaki PartialViewResult, HomeController tarafında database ile işlem yaptığı için dinamik bir olay.
+                Controller'da işlem gören partial'lar çağrılırken Html.Partial() yerine Html.Action("PartialName", "ControllerName") olarak çağrılır.*@
+
+            @*Controller ve Action tetiklenir
+
+                Dinamik verilerle birlikte belirli bir iş mantığının yürütülmesi gerektiğinde kullanılır.
+                Örneğin, bir veritabanından veri çekmek veya bir API'ye istekte bulunmak gibi.
+
+                Eğer sadece bir View dosyasını göstermek istiyorsak @Html.Partial,
+                iş mantığını tetikleyip dinamik içerik oluşturmamız gerekiyorsa @Html.Action kullanabiliriz.
+            *@
+
+            <div class="grids">
+                <div class="box1">
+
+                    @Html.Action("Top5Partial", "Home")
+
+                    <div class="padding1">
+
+                        @Html.Action("BestPlacesPartial", "Home")
+                        @Html.Action("BestPlacesPartialRight", "Home")
+
+                    </div>
+
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

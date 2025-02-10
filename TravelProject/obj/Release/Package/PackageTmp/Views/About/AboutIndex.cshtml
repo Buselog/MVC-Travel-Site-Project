@@ -1,0 +1,25 @@
+﻿@model IEnumerable<TravelProject.Models.Classes.About>
+
+@{
+    ViewBag.Title = "AboutIndex";
+    Layout = "~/Views/Layout/Index.cshtml";
+}
+
+
+<div class="wrap">
+    <div class="about">
+        <br />
+        <br />
+        <br />
+        <p>
+            @foreach (var item in Model)
+            {
+                <img src="@item.AboutImageUrl" alt="travel" />
+                <br />
+                <br />
+                @item.AboutDescription
+                <br /><br /><br />
+            }
+        </p>
+    </div>
+</div>

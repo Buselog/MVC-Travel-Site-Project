@@ -1,0 +1,55 @@
+﻿@model IEnumerable<TravelProject.Models.Classes.TraditionalFoodsBlog>
+@{
+    ViewBag.Title = "FoodsBlogIndex";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h3>Foods Blog Page</h3>
+
+<table class="table table-bordered table-hover">
+
+    <thead>
+        <tr>
+
+            <th>Food ID</th>
+            <th>Food Name</th>
+            <th>Food Country</th>
+            <th>Food Rating</th>
+            <th>Food Description</th>
+            <th>Food Image Url</th>
+            <th>Operations</th>
+
+        </tr>
+    </thead>
+
+    <tbody>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td><b>@item.TraditionalFoodsBlogID</b></td>
+                <td>@item.TraditionalFoodName</td>
+                <td>@item.TraditionalFoodCountry</td>
+                <td>@item.TraditionalFoodRating</td>
+                <td>@item.TraditionalFoodDescription.Substring(0, 130)...</td>
+                <td align="center">
+                    <img src="@item.TraditionalFoodImageUrl" alt="@item.TraditionalFoodName" class="img-thumbnail" style="width:150px" />
+                </td>
+                <td align="center">
+
+                    <a href="/AdminFoodsBlog/UpdateFood/@item.TraditionalFoodsBlogID" class="btn btn-outline-info btn-sm">Update</a>
+                    <br /> <br />
+                    <a href="/AdminFoodsBlog/DeleteFood/@item.TraditionalFoodsBlogID" class="btn btn-outline-danger btn-sm">Delete</a>
+
+                </td>
+            </tr>
+        }
+
+    </tbody>
+
+</table>
+
+<br />
+
+<a href="/AdminFoodsBlog/AddNewFood" class="btn btn-outline-success">Add New Hotel!</a>
+

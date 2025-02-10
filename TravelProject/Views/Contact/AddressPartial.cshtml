@@ -1,0 +1,30 @@
+﻿@using TravelProject.Models.Classes
+@model List<Address>
+
+
+<div class="contact-bottom">
+    <div class="contact-left">
+
+        @foreach (var item in Model)
+        {
+            <div class="contact-add">
+                <h3>@item.AddressPageTitle</h3>
+                <p><i>@item.AddressPageDescription </i></p>
+                <p><b>Full Address:</b> @item.AddressFull</p>
+                <p>Phone: <a href="tel:@item.AddressPhone">@item.AddressPhone</a></p>
+                <p>Email: <a href="mailto:@item.AddressMail">gorcumbuse@gmail.com</a></p>
+                <p>Location: @item.AddressLocation</p>
+            </div>
+        }
+
+    </div>
+
+    <div class="contact-map">
+        <iframe width="650" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12029.232615076551!2d29.025120839604067!3d41.08411326518311!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab605ecb18f53%3A0x7b69efd8c9f91bce!2zRXRpbGVyLCBCZcWfaWt0YcWfL8Swc3RhbmJ1bA!5e0!3m2!1str!2str!4v1738765964379!5m2!1str!2str"></iframe><br><small><a href="https://www.google.com/maps/place/Etiler,+Be%C5%9Fikta%C5%9F%2F%C4%B0stanbul/ll=41.0841133,29.0251208,15z/data=!3m1!4b1!4m6!3m5!1s0x14cab605ecb18f53:0x7b69efd8c9f91bce!8m2!3d41.0870419!4d29.0372643!16s%2Fm%2F02q3c5x?entry=ttu&g_ep=EgoyMDI1MDIwMi4wIKXMDSoASAFQAw%3D%3D" style="color: #555;text-align:left"></a></small>
+    </div>
+
+    <div class="clear"></div>
+</div>
+
+
+

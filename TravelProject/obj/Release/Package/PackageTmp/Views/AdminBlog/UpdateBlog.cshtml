@@ -1,0 +1,41 @@
+﻿@model TravelProject.Models.Classes.Blog
+
+
+@{
+    ViewBag.Title = "UpdateBlog";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h3>Update Blog Page</h3>
+<br />
+<br />
+
+
+@using (Html.BeginForm("UpdateBlog", "AdminBlog", FormMethod.Post))
+{
+    <div>
+
+        @Html.LabelFor(a => a.BlogID)
+        @Html.TextBoxFor(a => a.BlogID, new { @class = "form-control", @readonly = "readonly" })
+        <br />
+
+        @Html.LabelFor(a => a.BlogTitle)
+        @Html.TextBoxFor(a => a.BlogTitle, new { @class = "form-control" })
+        <br />
+
+        @Html.LabelFor(a => a.BlogDescription)
+        @Html.TextAreaFor(a => a.BlogDescription, new { @class = "form-control" })
+        <br />
+
+        @Html.LabelFor(a => a.BlogDate)
+        @Html.TextBoxFor(a => a.BlogDate, new { @class = "form-control", type = "date" })
+        <br />
+
+        @Html.LabelFor(a => a.BlogImageUrl)
+        @Html.TextBoxFor(a => a.BlogImageUrl, new { @class = "form-control" })
+        <br />
+
+    </div>
+
+    <button class="btn btn-outline-primary btn-sm">Save Changes</button>
+}

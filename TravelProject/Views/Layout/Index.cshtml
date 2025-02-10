@@ -1,0 +1,42 @@
+﻿
+@{
+    Layout = null;
+}
+
+
+
+<!DOCTYPE HTML>
+<html>
+
+@Html.Partial("~/Views/Layout/HeadPartial.cshtml")
+
+
+
+<body>
+
+    @Html.Partial("~/Views/Layout/HeaderPartial.cshtml")
+
+
+
+    @Html.Partial("~/Views/Layout/HeaderBottomPartial.cshtml")
+
+
+
+    @*<div class="content">
+        @RenderBody()
+    </div>*@
+
+    @RenderBody()
+
+
+
+    <div class="footer-bottom">
+        <div class="wrap">
+            <div class="copy">
+                <p>&copy; Traveler's Journal. All Rights Reserved | Design by <a href="http://w3layouts.com">W3Layouts</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

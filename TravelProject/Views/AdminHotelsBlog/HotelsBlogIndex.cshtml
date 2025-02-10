@@ -1,0 +1,64 @@
+﻿@model IEnumerable<TravelProject.Models.Classes.HotelsBlog>
+
+
+@{
+    ViewBag.Title = "HotelsBlogIndex";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+
+
+<h3>Hotel Blog Page</h3>
+<br />
+
+
+<table class="table table-bordered table-hover">
+
+    <thead>
+        <tr>
+
+            <th>Hotel Blog ID</th>
+            <th>Hotel Name</th>
+            <th>Hotel Location</th>
+            <th>Hotel Rating</th>
+            <th>Hotel Description</th>
+            <th>Hotel Image</th>
+            <th>Hotel Map Link</th>
+            <th>Hotel Website</th>
+            <th>Operations</th>
+
+        </tr>
+    </thead>
+
+    <tbody>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td><b>@item.HotelsBlogID</b></td>
+                <td><a href="@item.HotelSiteLink" style="color:darkslategrey">@item.HotelName</a></td>
+                <td>@item.HotelLocation</td>
+                <td>@item.HotelRating</td>
+                <td>@item.HotelShortDescription.Substring(0, 10)...</td>
+                <td align="center">
+                    <img src="@item.HotelImageUrl" alt="@item.HotelName" class="img-thumbnail" style="width:150px" />
+                </td>
+                <td>@item.HotelContactLink.Substring(0, 10)...</td>
+                <td><a href="@item.HotelSiteLink" style="color:midnightblue">@item.HotelSiteLink.Substring(0, 10)...</a></td>
+                <td align="center">
+
+                    <a href="/AdminHotelsBlog/UpdateHotelsBlog/@item.HotelsBlogID" class="btn btn-outline-info btn-sm">Update</a>
+                    <br /> <br />
+                    <a href="/AdminHotelsBlog/DeleteHotelsBlog/@item.HotelsBlogID" class="btn btn-outline-danger btn-sm">Delete</a>
+
+                </td>
+            </tr>
+        }
+
+    </tbody>
+
+</table>
+
+<br />
+
+<a href="/AdminHotelsBlog/AddNewHotel" class="btn btn-outline-success">Add New Hotel!</a>

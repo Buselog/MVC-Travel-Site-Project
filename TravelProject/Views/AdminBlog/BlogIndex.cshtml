@@ -1,0 +1,57 @@
+﻿@using TravelProject.Models.Classes
+@model List<Blog>
+
+
+@{
+    ViewBag.Title = "BlogIndex";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h3>Blog Page</h3>
+<br />
+
+
+<table class="table table-bordered table-hover">
+
+    <thead>
+        <tr>
+
+            <th>Blog ID</th>
+            <th>Blog Title</th>
+            <th>Blog Description</th>
+            <th>Blog Date</th>
+            <th>Blog Image Url</th>
+            <th>Operations</th>
+
+        </tr>
+    </thead>
+
+    <tbody>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td><b>@item.BlogID</b></td>
+                <td>@item.BlogTitle</td>
+                <td>@item.BlogDescription.Substring(0,15)...</td>
+                <td>@item.BlogDate.ToString("dd.MM.yyyy")</td>
+                <td align="center">
+                    <img src="@item.BlogImageUrl" alt="@item.BlogTitle" class="img-thumbnail" style="width:150px" />
+                </td>
+                <td align="center">
+
+                    <a href="/AdminBlog/UpdateBlog/@item.BlogID" class="btn btn-outline-info btn-sm">Update</a>
+                    <br /> <br />
+                    <a href="/AdminBlog/DeleteBlog/@item.BlogID" class="btn btn-outline-danger btn-sm">Delete</a>
+
+                </td>
+            </tr>
+        }
+
+    </tbody>
+
+</table>
+
+<br />
+
+<a href="/AdminBlog/CreateNewBlog" class="btn btn-outline-success">Add New Blog!</a>

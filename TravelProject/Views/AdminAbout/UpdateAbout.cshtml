@@ -1,0 +1,32 @@
+﻿@model TravelProject.Models.Classes.About
+
+
+@{
+    ViewBag.Title = "UpdateAbout";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h2>UpdateAbout</h2>
+
+@using (Html.BeginForm("UpdateAbout", "AdminAbout", FormMethod.Post))
+{
+    <div>
+
+        @Html.LabelFor(a => a.AboutID)
+        @Html.TextBoxFor(a => a.AboutID, new { @class = "form-control", @readonly = "readonly" })
+        <br />
+
+        @Html.LabelFor(a => a.AboutImageUrl)
+        @Html.TextBoxFor(a => a.AboutImageUrl, new { @class = "form-control" })
+        <br />
+
+        @Html.LabelFor(a => a.AboutDescription)
+        @Html.TextBoxFor(a => a.AboutDescription, new { @class = "form-control" })
+
+        <br />
+
+    </div>
+
+    <button class="btn btn-outline-primary btn-sm">Save Changes</button>
+}
+

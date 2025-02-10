@@ -1,0 +1,86 @@
+﻿@model IEnumerable<TravelProject.Models.Classes.HotelsBlog>
+@{
+    ViewBag.Title = "HotelsBlogIndex";
+    Layout = "~/Views/Layout/Index.cshtml";
+}
+
+@*<!DOCTYPE HTML>
+<html>*@
+<head>
+
+
+    <title>Traveler's Journal</title>
+    <link href="~/Template/content2/css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <link href="~/Template/content2/css/style.css" rel='stylesheet' type='text/css' />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+
+    <meta name="keywords" content="Personal Blog Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
+        Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+
+    <link href='http://fonts.googleapis.com/css?family=Oswald:100,400,300,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,300italic' rel='stylesheet' type='text/css'>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="~/Template/content2/js/move-top.js"></script>
+    <script type="text/javascript" src="~/Template/content2/js/easing.js"></script>
+
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 900);
+            });
+        });
+    </script>
+
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="clearfix"></div>
+
+
+        <div class="single">
+            <div class="container">
+                <div class="col-md-10 single-main">
+
+
+                    @foreach (var item in Model)
+                    {
+                        <div class="single-grid">
+
+                            <img src="@item.HotelImageUrl" alt="@item.HotelName" style="margin-bottom:20px" />
+                            <br /><br />
+                           <a href="@item.HotelSiteLink"><h3>@item.HotelName</h3></a>
+                            <br />
+                            <h4>@item.HotelLocation</h4>
+                            <br />
+                            <h5>@item.HotelRating</h5>
+                            
+                            <p>@item.HotelShortDescription</p>
+                            
+                            <div class="contact-map">
+                                <iframe width="600" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="@item.HotelContactLink"></iframe><br><small><a href="@item.HotelContactLink" style="color: #555;text-align:left"></a></small>
+                                
+                            </div>
+                        </div>
+                    }
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+
+@*</html>*@
+

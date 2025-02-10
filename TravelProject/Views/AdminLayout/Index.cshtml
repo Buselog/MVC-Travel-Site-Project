@@ -1,0 +1,50 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!doctype html>
+<html lang="en">
+
+<!--Head Partial-->
+
+@Html.Partial("~/Views/AdminLayout/HeadPartial.cshtml")
+
+<body>
+
+    <div class="wrapper d-flex align-items-stretch">
+
+        <nav id="sidebar" class="active">
+            <h1><a href="/Home/HomeIndex" class="logo">TJ.</a></h1>
+
+            <!--Sidebar Partial-->
+
+            @Html.Partial("~/Views/AdminLayout/SidebarPartial.cshtml")
+
+            <div class="footer">
+                <p>
+                    &copy;
+                    <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" style="color:whitesmoke" target="_blank">Colorlib.com</a>
+                </p>
+            </div>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content" class="p-4 p-md-5">
+
+            <!-- Navbar Partial -->
+
+            @Html.Partial("~/Views/AdminLayout/NavbarPartial.cshtml")
+
+            @RenderBody()
+
+        </div>
+    
+    </div>
+
+    <!--Script Partial-->
+
+    @Html.Partial("~/Views/AdminLayout/ScriptPartial.cshtml")
+
+</body>
+</html>

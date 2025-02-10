@@ -1,0 +1,32 @@
+﻿@model TravelProject.Models.Classes.Contact
+@{
+    ViewBag.Title = "ContactIndex";
+    Layout = "~/Views/Layout/Index.cshtml";
+}
+
+<div class="contact">
+    <div class="wrap">
+        <div class="contact-top">
+            <br />
+            <h3>Contact Information</h3>
+            <p>
+
+                We are just a click away for any questions you may have.
+
+                Please contact us to get answers to your questions as soon as possible.
+
+            </p>
+        </div>
+
+        @Html.Action("ContactPartial", "Contact")
+
+        <div class="clear"></div>
+
+        <br />
+
+        @Html.Action("AddressPartial", "Contact")
+
+        <div class="clear"></div>
+    </div>
+</div>
+

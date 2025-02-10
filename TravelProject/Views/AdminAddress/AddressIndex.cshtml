@@ -1,0 +1,55 @@
+﻿@using TravelProject.Models.Classes
+@model List<Address>
+@{
+    ViewBag.Title = "AddressIndex";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h3>Address Information Page</h3>
+<br />
+<br />
+
+@{
+    int addressId = 0;
+}
+
+<table class="table table-hover table-borderless">
+    @foreach (var item in Model)
+    {
+        <tr>
+            <th>Address ID</th>
+            <td>@item.AddressID</td>
+        </tr>
+        <tr>
+            <th>Address Title</th>
+            <td>@item.AddressPageTitle</td>
+        </tr>
+        <tr>
+            <th>Address Description</th>
+            <td>@item.AddressPageDescription</td>
+        </tr>
+        <tr>
+            <th>Full Address</th>
+            <td>@item.AddressFull</td>
+        </tr>
+        <tr>
+            <th>Admin Mail</th>
+            <td>@item.AddressMail</td>
+        </tr>
+        <tr>
+            <th>Admin Phone</th>
+            <td>@item.AddressPhone</td>
+        </tr>
+        <tr>
+            <th>Admin Location</th>
+            <td>@item.AddressLocation</td>
+        </tr>
+
+        addressId = item.AddressID;
+    }
+
+</table>
+
+<br />
+
+<a href="/AdminAddress/UpdateAddress/@addressId" class="btn btn-outline-primary">Update Address</a>

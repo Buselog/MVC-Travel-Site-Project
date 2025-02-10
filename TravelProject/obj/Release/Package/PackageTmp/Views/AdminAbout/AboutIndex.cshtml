@@ -1,0 +1,48 @@
+﻿@using TravelProject.Models.Classes
+@model List<About>
+
+
+@{
+    ViewBag.Title = "AboutIndex";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h3>About Page</h3>
+<br />
+
+<table class="table table-bordered table-hover">
+
+    <thead>
+        <tr>
+            <th>AboutID</th>
+            <th>Page Image</th>
+            <th>About Page Description</th>
+            <th>Operations</th>
+        </tr>
+
+    </thead>
+
+    <tbody>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td><b>@item.AboutID</b></td>
+                <td align="center"> <img src="@item.AboutImageUrl" alt="@item.AboutID Image" class="img-thumbnail" style="width:100px" /></td>
+                <td>@item.AboutDescription.Substring(0,90)...</td>
+                <td align="center">
+
+                    <a href="/AdminAbout/UpdateAbout/@item.AboutID" class="btn btn-outline-info btn-sm">Update</a>
+                    &nbsp;
+                    <a href="/AdminAbout/DeleteAbout/@item.AboutID" class="btn btn-outline-danger btn-sm">Delete</a>
+
+                </td>
+            </tr>
+        }
+
+    </tbody>
+
+</table>
+
+
+

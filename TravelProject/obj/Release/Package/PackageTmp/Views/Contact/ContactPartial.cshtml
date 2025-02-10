@@ -1,0 +1,73 @@
+﻿@model TravelProject.Models.Classes.Contact
+
+
+
+
+
+
+
+
+
+
+<div class="= form">
+
+    <div class="cmxform">
+        <div class="contact-container">
+
+            @using (Html.BeginForm("ContactPartial", "Contact", FormMethod.Post))
+            {
+
+                <div class="form-group">
+                    @Html.TextBoxFor(a => a.ContactName, new { @class = "form-control", placeholder = "Name" })
+                    @Html.ValidationMessageFor(a => a.ContactName, "", new { @style = "color:red" })
+                </div>
+
+                <div class="form-group">
+
+                    @Html.TextBoxFor(a => a.ContactEmail, new { @class = "form-control", placeholder = "Mail" })
+                    @Html.ValidationMessageFor(a => a.ContactEmail, "", new { @style = "color:red" })
+                </div>
+
+                <div class="form-group">
+
+                    @Html.TextBoxFor(a => a.ContactPhone, new { @class = "form-control", placeholder = "Phone" })
+                </div>
+
+                <div class="contact-right">
+                    <div class="form1 form-group">
+                        @Html.TextAreaFor(a => a.ContactMessage, new { @class = "form-control", placeholder = "Message" })
+                        @Html.ValidationMessageFor(a => a.ContactMessage, "", new { @style = "color:red" })
+                    </div>
+                </div>
+
+
+                <div class="form-control">
+                    <div class="form-group">
+                        <button class="btn btn-primary py-3 px-5 read">Send</button>
+                    </div>
+                </div>
+
+            }
+            </div>
+        </div>
+
+    </div>
+
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["SuccessMessage"]
+    </div>
+}
+
+
+
+
+
+
+
+
+
+
+

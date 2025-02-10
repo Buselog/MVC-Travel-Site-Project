@@ -1,0 +1,48 @@
+﻿@model TravelProject.Models.Classes.HotelsBlog
+
+@{
+    ViewBag.Title = "AddNewHotel";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h3>Add New Hotel Page</h3>
+<br />
+
+
+@using (Html.BeginForm("AddNewHotel", "AdminHotelsBlog", FormMethod.Post))
+{
+    <div>
+
+        @Html.LabelFor(a => a.HotelName)
+        @Html.TextBoxFor(a => a.HotelName, new { @class = "form-control" })
+        <br />
+
+        @Html.LabelFor(a => a.HotelLocation)
+        @Html.TextBoxFor(a => a.HotelLocation, new { @class = "form-control" })
+        <br />
+
+        @Html.LabelFor(a => a.HotelRating)
+        @Html.TextBoxFor(a => a.HotelRating, new { @class = "form-control" })
+        <br />
+
+        @Html.LabelFor(a => a.HotelShortDescription)
+        @Html.TextAreaFor(a => a.HotelShortDescription, new { @class = "form-control" })
+        <br />
+
+        @Html.LabelFor(a => a.HotelImageUrl)
+        @Html.TextBoxFor(a => a.HotelImageUrl, new { @class = "form-control" })
+        <br />
+
+        @Html.LabelFor(a => a.HotelContactLink)
+        @Html.TextBoxFor(a => a.HotelContactLink, new { @class = "form-control" })
+        <br />
+
+        @Html.LabelFor(a => a.HotelSiteLink)
+        @Html.TextBoxFor(a => a.HotelSiteLink, new { @class = "form-control" })
+        <br />
+
+    </div>
+
+    <button class="btn btn-outline-primary btn-sm">Add This Hotel!</button>
+}
+

@@ -1,0 +1,33 @@
+﻿@model TravelProject.Models.Classes.Blog
+@{
+    ViewBag.Title = "CreateNewBlog";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h3>Create New Blog Page</h3>
+
+
+@using (Html.BeginForm("CreateNewBlog", "AdminBlog", FormMethod.Post))
+{
+    <div>
+
+        @Html.LabelFor(a => a.BlogTitle)
+        @Html.TextBoxFor(a => a.BlogTitle, new { @class = "form-control" })
+        <br />
+
+        @Html.LabelFor(a => a.BlogDescription)
+        @Html.TextAreaFor(a => a.BlogDescription, new { @class = "form-control" })
+        <br />
+
+        @Html.LabelFor(a => a.BlogDate)
+        @Html.TextBoxFor(a => a.BlogDate, new { @class = "form-control", type="date"})
+
+        @Html.LabelFor(a => a.BlogImageUrl)
+        @Html.TextBoxFor(a => a.BlogImageUrl, new { @class = "form-control" })
+
+        <br />
+
+    </div>
+
+    <button class="btn btn-outline-primary btn-sm">Add This Blog</button>
+}

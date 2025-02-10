@@ -1,0 +1,42 @@
+﻿@model TravelProject.Models.Classes.TraditionalFoodsBlog
+@{
+    ViewBag.Title = "UpdateFood";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h3>Update Food Page</h3>
+<br />
+
+@using (Html.BeginForm("UpdateFood", "AdminFoodsBlog", FormMethod.Post))
+{
+    <div>
+
+        @Html.LabelFor(a => a.TraditionalFoodsBlogID)
+        @Html.TextBoxFor(a => a.TraditionalFoodsBlogID, new { @class = "form-control", @readonly = "readonly" })
+        <br />
+
+        @Html.LabelFor(a => a.TraditionalFoodName)
+        @Html.TextBoxFor(a => a.TraditionalFoodName, new { @class = "form-control" })
+        <br />
+
+        @Html.LabelFor(a => a.TraditionalFoodCountry)
+        @Html.TextBoxFor(a => a.TraditionalFoodCountry, new { @class = "form-control" })
+        <br />
+
+        @Html.LabelFor(a => a.TraditionalFoodRating)
+        @Html.TextBoxFor(a => a.TraditionalFoodRating, new { @class = "form-control" })
+        <br />
+
+        @Html.LabelFor(a => a.TraditionalFoodDescription)
+        @Html.TextAreaFor(a => a.TraditionalFoodDescription, new { @class = "form-control" })
+        <br />
+
+        @Html.LabelFor(a => a.TraditionalFoodImageUrl)
+        @Html.TextBoxFor(a => a.TraditionalFoodImageUrl, new { @class = "form-control" })
+        <br />
+
+    </div>
+
+    <button class="btn btn-outline-primary btn-sm">Save Changes</button>
+}
+

@@ -1,0 +1,47 @@
+﻿@model TravelProject.Models.Classes.Address
+@{
+    ViewBag.Title = "UpdateAddress";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h3>Update Address Page</h3>
+<br />
+<br />
+
+@using (Html.BeginForm("UpdateAddress", "AdminAddress", FormMethod.Post))
+{
+    <div>
+
+        @Html.LabelFor(a => a.AddressID)
+        @Html.TextBoxFor(a => a.AddressID, new { @class = "form-control", @readonly = "readonly" })
+        <br />
+
+        @Html.LabelFor(a => a.AddressPageTitle)
+        @Html.TextBoxFor(a => a.AddressPageTitle, new { @class = "form-control" })
+        <br />
+
+        @Html.LabelFor(a => a.AddressPageDescription)
+        @Html.TextBoxFor(a => a.AddressPageDescription, new { @class = "form-control" })
+        <br />
+
+        @Html.LabelFor(a => a.AddressFull)
+        @Html.TextBoxFor(a => a.AddressFull, new { @class = "form-control" })
+        <br />
+
+        @Html.LabelFor(a => a.AddressMail)
+        @Html.TextBoxFor(a => a.AddressMail, new { @class = "form-control" })
+        <br />
+
+        @Html.LabelFor(a => a.AddressPhone)
+        @Html.TextBoxFor(a => a.AddressPhone, new { @class = "form-control" })
+        <br />
+
+        @Html.LabelFor(a => a.AddressLocation)
+        @Html.TextBoxFor(a => a.AddressLocation, new { @class = "form-control" })
+        <br />
+
+    </div>
+
+    <button class="btn btn-outline-primary btn-sm">Save Changes</button>
+}
+
