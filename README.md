@@ -4,7 +4,7 @@ Bu proje, ASP.NET MVC ve Code First yöntemi kullanılarak geliştirilmiş bir t
 
 
 Projeyi canlı incelemek için tıklayın:
-<a href="https://lnkd.in/dArA7fzR" target="blank"> 🛣 Traveler's Journal</a>
+<a href="https://lnkd.in/dArA7fzR" target="_blank"> 🛣 Traveler's Journal</a>
 
 -----
 
