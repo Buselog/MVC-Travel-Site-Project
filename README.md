@@ -2,6 +2,10 @@
 
 Bu proje, ASP.NET MVC ve Code First yöntemi kullanılarak geliştirilmiş bir tatil seyahat sitesidir. Kullanıcılar, farklı tatil yerlerini keşfedebilir ve gezilecek yerler, konaklama yapılabilecek oteller ve denenebilecek yemekler hakkında bilgi alabilir. Veritabanı yönetimi için Entity Framework Code First, tasarım için ise Bootstrap kullanılmıştır. Bu proje, tatil planlamak isteyenler için kolay ve kullanışlı bir platform sunmayı amaçlamaktadır.
 
+
+Projeyi canlı incelemek için tıklayın:
+<a href="https://lnkd.in/dArA7fzR"> 🛣 Traveler's Journal</a>
+
 -----
 
 
